@@ -42,7 +42,7 @@ class Home extends BaseController
         // ->setTextColor(new Color(255, 0, 0));
         $result = $writer->write($qrCode, null, null);
         // header('Content-Type: ' . $result->getMimeType());
-
+        // to save image file
         $result->saveToFile(WRITEPATH . "uploads\\" . $inputan . ".png");
         $dataUri = $result->getDataUri();
         $data['img'] = $dataUri;

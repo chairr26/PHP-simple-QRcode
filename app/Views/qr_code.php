@@ -16,7 +16,7 @@
         <div style="border:1px solid grey; padding:20px; height:auto">
             <form action="<?php echo base_url(); ?>Home/createQR" method="POST">
                 <div class="form-group">
-                    <label for="exqr">Email address</label>
+                    <label for="exqr">Karakter</label>
                     <input type="text" class="form-control" id="exqr" name="kalimat" placeholder="masukan karakter">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
